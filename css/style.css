@@ -1,12 +1,18 @@
+body {
+    background-color: ghostwhite;
+}
+
 .animation1 {
     width: 400px;
     height: 400px;
-    transition: width 1s, height 2s, transform 0.5s;
+    opacity: 1;
+    transition: width 1s, height 2s, transform 0.5s, opacity 2s;
 }
 
 .animation1:hover {
     width: 200px;
     height: 200px;
+    opacity: 0;
     transform: rotate(180deg);
 }
 
@@ -28,24 +34,3 @@
     content: 'aloH';
     transform: rotate(360deg);
 }
-
-
-/*
-.box {
-    border-style: solid;
-    border-width: 1px;
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #0000FF;
-    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-.box:hover {
-    background-color: #FFCCCC;
-    width: 200px;
-    height: 200px;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}*/
